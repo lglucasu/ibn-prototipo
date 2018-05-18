@@ -1,0 +1,265 @@
+/* 
+    * Protótipo IBN
+    * Author : Lucas G Uchôa
+*/
+
+*{
+    box-sizing: border-box;
+}
+
+/* ======================= Basic Setup ======================= */
+
+@import url('https://fonts.googleapis.com/css?family=IBM+Plex+Sans|Old+Standard+TT:400,700|Open+Sans:400,700');
+@import url('https://fonts.googleapis.com/css?family=IBM+Plex+Serif:400,700');
+@import url('https://fonts.googleapis.com/css?family=Noto+Serif:400,700');
+@import url('https://fonts.googleapis.com/css?family=Lato');
+
+
+* {
+    font-family: 'Old Standard TT', serif;
+    /* font-family: 'Open Sans', sans-serif; */
+    font-family: 'IBM Plex Sans', sans-serif;
+    font-family: 'Lato', sans-serif;
+
+
+}
+
+section {
+    min-height: 50vh;
+    text-align: center;
+    padding: 60px 0; 
+}
+section .row {
+
+    margin-bottom: 60px;
+}
+.bg-dark-transparent {
+    background-color: #343a40ab!important;
+}
+
+.btn {
+    border-radius: 0;
+    border-width: 3px;
+    text-transform: uppercase;
+}
+
+/* ======================= REUSABLE COMPONENTS ======================= */
+
+.title-divider {
+    width: 200px;
+    border-top: 1px solid #e2e1e1;
+    border-bottom: 1px solid #e2e1e1;
+    margin: 0 auto;
+    margin-top: 5px;
+}
+.title-divider hr {
+    border-color: blue;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    border: 0;
+    border-top: 5px solid rgba(0,0,0,.1);
+    width: 8px;
+    background: #177ad6;
+    border: none;
+    height: 8px;
+}
+
+
+/* ======================= HEADER ======================= */
+
+.logo {
+    transition: all 300ms ease;
+    height: 50px;
+    width:50px;
+}
+
+.navbar,
+.navbar .container-fluid
+{
+    transition: all 300ms ease;
+}
+.navbar .container-fluid.start-position{
+    padding-top: 35px;
+    position: relative;
+}
+
+.navbar-light .navbar-brand,
+.navbar-dark .navbar-brand
+{
+    font-weight: 700;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    font-size: 110%;
+}
+.navbar-light{
+    color: #000;
+}
+.navbar-dark{
+    color: #fff;
+}
+
+header {
+    width: 100%;
+    height: 100vh;
+    transition: padding 0.3s ease;
+}
+
+header p{
+    font-size: 130%;
+}
+
+header .container-fluid{
+    height: inherit;
+}
+
+header h1 {
+    font-size:6em;
+    color:#Fff;
+    letter-spacing: 8px;
+    font-weight: 700;
+}
+
+.hero-carousel {
+    width: 100%;
+    position: relative;
+    height: 100%;
+}
+.hero-carousel .carousel-item {
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background: #000;
+   
+}
+
+.hero-carousel .carousel-inner  {
+    height: 100%;
+}
+
+.hero-carousel .carousel-inner .container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: inherit;
+    color: #fff;
+}
+
+
+/* ======================= Headings ======================= */
+
+
+.section-title {
+    font-size: 2em;
+    margin-bottom: 30px;
+ 
+    font-weight: 700;
+    color:#111;
+    text-transform: uppercase;    
+}
+
+h2 {
+    font-weight: 700;
+}
+
+section h3{
+    color: #e3e3e3;
+}
+
+/* ======================= Paragraphs ======================= */
+
+
+.text-container p {
+    line-height: 145%;
+    width: 60%;
+    margin-left:20%;
+    text-align: center;
+
+    
+    font-size: 110%;
+    line-height: 145%;
+}
+
+/* ======================= ABOUT ======================= */
+
+.section-about h2{
+   font-family: 'IBM Plex Serif', serif;
+   font-size: 3em;
+   margin-bottom: 30px;
+   font-weight: 700;
+   color:#111;
+
+}
+
+/* ======================= PASTORES ======================= */
+
+.section-pastores {
+    background: linear-gradient(to right, #8e54e903, #4776e687), url('img/pastores.jpeg') center center;
+    background-size: cover;
+    background-attachment: fixed;
+    color:#fff;
+    min-height: 60vh;
+    margin: 0 -15px;
+    overflow: hidden;
+}
+.section-pastores .row {
+    min-height: inherit;
+}
+.section-pastores .col{
+    display: flex;
+    flex-direction: column;
+    justify-content: center    
+}
+
+/* ======================= Eventos ======================= */
+
+.section-eventos {
+    margin: 0 -15px;
+    overflow: hidden;
+}
+
+.event-container {
+    overflow: hidden;
+    height: 100vh;
+    position: relative;
+    background:#000;
+}
+ .event {
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    transition: all 300ms ease;
+    display: block;
+    z-index: 2;
+}
+
+.event:hover {
+    transform: scale(1.06);
+}
+
+.event-container .description{
+    color: #fff;
+    position: absolute;
+    bottom: 30px;
+    text-align: left;
+    padding: 15px;
+    z-index: 123
+}
+
+/* ======================= ROOTS ======================= */
+.section-redes {
+    height: 30vh;
+    margin: 0 -15px;
+    overflow: hidden;
+    padding: 0;
+}
+
+.section-redes .event-container{
+    height: 30vh;
+}
+.section-redes .event {
+    max-height: 30vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-decoration: none;
+}
